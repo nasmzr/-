@@ -19,7 +19,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           value: name
         } = Swal.fire({
           title: 'Masukkan nama awak dulu',
-          input: 'text',
+          input: 'fatin',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
