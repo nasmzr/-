@@ -16,10 +16,10 @@ document.querySelector(".tombol").addEventListener('click', function () {
       Swal.fire("Kalau awak tipu takpe lah", "", "error").then(function () {
 
         const {
-          value: name
+          value: fatin
         } = Swal.fire({
           title: 'Masukkan nama awak dulu',
-          input: 'fatin',
+          input: 'text',
           inputLabel: '',
           showCancelButton: true,
           inputValidator: (value) => {
