@@ -6,7 +6,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by=ganti');
 } else {
-  sender = "Amzar";
+  sender = "Nurizyanie";
 }
 
 
