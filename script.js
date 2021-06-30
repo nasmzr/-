@@ -39,7 +39,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
           }).then((result) => {
             /* Read more about isConfirmed, isDenied below */
             if (result.isConfirmed) {
-              Swal.fire(`${sender} juga sayang ${nama}`).then(function () {
+              Swal.fire(`${sender} pon sayang ${nama}`).then(function () {
                 Swal.fire({
                   title: 'Actually sayang berapa peratus?',
                   icon: 'question',
@@ -55,7 +55,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   val = e.value
                   Swal.fire(`Terima kasih sebab sayang ${sender} ${val}%`).then(function () {
                     Swal.fire({
-                      title: `Sekarang ${nama} rindu tak ${sender}?`,
+                      title: `Sekarang ni ${nama} rindu tak ${sender}?`,
                       showDenyButton: true,
                       showCancelButton: false,
                       confirmButtonText: `Rindu :(`,
@@ -63,13 +63,13 @@ document.querySelector(".tombol").addEventListener('click', function () {
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhu ${sender} pon rindu ${nama} muah`).then(function () {
-                          Swal.fire('Okay last nih babe').then(function () {
-                            Swal.fire('Cuba klik icon hati yang bawah ni :)')
+                        Swal.fire(`${sender} pon rindu ${nama}`).then(function () {
+                          Swal.fire('Okay last ni sayang').then(function () {
+                            Swal.fire('Cuba klik icon hati dekat bawah :)')
                           })
                         })
                       } else if (result.isDenied) {
-                        Swal.fire('grrr , memang tak rindu dengan kekasih sendiri ek', '', 'error').then(function () {
+                        Swal.fire('hmm, memang tak rindu dengan kekasih sendiri ek', '', 'error').then(function () {
                           Swal.fire('Takpa lah awak :((')
                         })
                       }
