@@ -16,7 +16,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
       Swal.fire("Kalau awak tipu takpe lah", "", "error").then(function () {
 
         const {
-          value: fatin
+          value: suzita
         } = Swal.fire({
           title: 'Masukkan nama awak dulu',
           input: 'text',
